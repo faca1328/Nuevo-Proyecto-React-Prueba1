@@ -1,4 +1,5 @@
 import { CounterComp } from "./CounterComp";
+import { FormComp } from "./FormComp";
 
 export function HooksApp() {
     return (
@@ -7,7 +8,9 @@ export function HooksApp() {
                 Facu
             </h1>
             <hr />
-            <CounterComp></CounterComp>
+            <CounterComp/>
+            <hr />
+            <FormComp></FormComp>
         </>
     );
 };
