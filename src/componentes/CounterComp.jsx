@@ -13,9 +13,9 @@ export function CounterComp ()  {
   return (
       <>
       <h1>Counter : {counter} </h1>
-      <button onClick={() => sum(1)}> +1</button>
+      <button onClick={() => sum()}> +1</button>
       <button onClick={reset}> Reset </button>
-      <button onClick={() => res(1)}> -1</button>
+      <button onClick={() => res()}> -1</button>
       </>
   )
 }

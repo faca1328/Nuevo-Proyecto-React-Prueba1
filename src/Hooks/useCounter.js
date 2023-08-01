@@ -10,7 +10,8 @@ export function useCounter (initialValue = 0) {
     }
     
     const res = (value = 1) => {
-        setCounter(counter - value)
+        if(counter <= 0) {return}
+        else {setCounter(counter - value)}
     }
 
     const reset = () => {
