@@ -15,7 +15,7 @@ export function CounterComp ()  {
       <h1>Counter : {counter} </h1>
       <button onClick={() => sum()}> +1</button>
       <button onClick={reset}> Reset </button>
-      <button onClick={() => res()}> -1</button>
+      <button onClick={() => res(3)}> -1</button>
       </>
   )
 }

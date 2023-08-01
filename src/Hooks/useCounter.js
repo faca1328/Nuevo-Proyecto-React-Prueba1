@@ -10,7 +10,9 @@ export function useCounter (initialValue = 0) {
     }
     
     const res = (value = 1) => {
-        if(counter <= 0) {return}
+        if(counter - value <= 0) {
+            setCounter(initialValue) 
+            return}
         else {setCounter(counter - value)}
     }
 
