@@ -1,9 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import {PrimerComponente} from './componentes/PriemrComponente'
+import {HooksApp} from './componentes/HooksApp'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>  
-    <PrimerComponente/>
+    <HooksApp/>
   </React.StrictMode>,
 )
