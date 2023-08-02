@@ -10,14 +10,16 @@ export function FormComp() {
     }
 
     //enviamos el initialForm al hook y recibimos los valore formState y onInputChange que los desestructuramos
-    const {formState, onInputChange} = useForm(initialForm)
+    const {formState, onInputChange, resetForm } = useForm(initialForm)
 
     // y del formState desestructuramos los valores del initialForm
     const {exampleInputUser1, exampleInputEmail1, exampleInputPassword1} = formState
 
     const onSubmit = (event) => {
-        event.preventDefault() //evita q se actualice la pag
-        console.log(formState);}
+        event.preventDefault(); //evita q se actualice la pag
+        console.log(formState);
+        resetForm();
+        }
 
     return (
             <form onSubmit={onSubmit}>

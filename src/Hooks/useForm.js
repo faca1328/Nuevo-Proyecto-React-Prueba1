@@ -13,13 +13,13 @@ export function useForm(initialForm={}) {
         })
     }
 
-    const onSubmit = (event) => {
-        event.preventDefault() //evita q se actualice la pag
-        console.log(formState);}
-
+    const resetForm = () => {
+        setFormState(initialForm);}
+    
     //enviamos estos valores al componente
     return {
         formState,
-        onInputChange
+        onInputChange,
+        resetForm
     }
 }
